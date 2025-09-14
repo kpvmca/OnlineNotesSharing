@@ -7,7 +7,7 @@ document.querySelector(".upload-btn").addEventListener("click", () => {
 document.querySelectorAll(".explore-btn").forEach(button => {
   button.addEventListener("click", () => {
     alert("Redirecting to notes page...");
-    // yaha pe aap apna actual "Browse Notes" page ka link de sakte ho
+    // yaha pe apna actual "Browse Notes" page ka link de sakte hai
     // example: window.location.href = "browse-notes.html";
   });
 });
@@ -57,3 +57,4 @@ document.querySelectorAll(".social-links a").forEach(link => {
     // Example: window.open(link.href, "_blank");
   });
 });
+
