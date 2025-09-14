@@ -1,0 +1,97 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    /* Background image */
+    background: url("LibraryLogin.jpg") no-repeat center center/cover;
+    position: relative;
+}
+
+/* Overlay to reduce background opacity */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.4); /* 0.4 = 40% dark overlay */
+    z-index: 0;
+}
+
+/* Container (form box) */
+.container {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.85);  /* Transparent white */
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    overflow: hidden;
+    width: 350px;
+    transition: height 0.3s;
+    backdrop-filter: blur(10px); /* glass effect */
+}
+
+/* Form Containers */
+.form-container {
+    padding: 40px;
+    display: none;
+}
+
+.form-container.active {
+    display: block;
+}
+
+form h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #6e8efb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #5a74e3;
+}
+
+/* Paragraphs */
+p {
+    text-align: center;
+    margin-top: 15px;
+    color: #555;
+}
+
+/* Toggle link */
+.toggle {
+    color: #6e8efb;
+    cursor: pointer;
+    font-weight: bold;
+}
