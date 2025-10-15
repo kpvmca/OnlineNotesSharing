@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'InterVar';
+  font-weight: 100 900;
+  font-display: swap;
+  src: local('Inter');
+}
+
+:root {
+  font-family: InterVar, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
+    Cantarell, Noto Sans, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji';
+  line-height: 1.6;
+}
+
+a { color: inherit; }
+
+img { display: block; max-width: 100%; }
